@@ -213,7 +213,7 @@ class SnakeGame {
     async submitScore(playerName, score) {
         try {
             // 注意：这个URL需要替换成你的Vercel项目地址
-            const response = await fetch('YOUR_VERCEL_URL/api/score', {
+            const response = await fetch('https://snake-game-psi-azure.vercel.app/api/score', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -241,7 +241,7 @@ class SnakeGame {
     async loadLeaderboard() {
         try {
             // 注意：这个URL需要替换成你的Vercel项目地址
-            const response = await fetch('YOUR_VERCEL_URL/api/leaderboard');
+            const response = await fetch('https://snake-game-psi-azure.vercel.app/api/leaderboard');
             const scores = await response.json();
             
             this.displayLeaderboard(scores);
