@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 贪吃蛇游戏</h1>
+        
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="highScore">0</span></div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="startBtn">开始游戏</button>
+            <button id="pauseBtn">暂停</button>
+            <button id="resetBtn">重新开始</button>
+        </div>
+
+        <div class="instructions">
+            <p>使用方向键控制蛇的移动</p>
+            <p>吃到食物获得分数，小心不要撞墙或撞到自己！</p>
+        </div>
+
+        <!-- 游戏结束对话框 -->
+        <div id="gameOverModal" class="modal">
+            <div class="modal-content">
+                <h2>游戏结束！</h2>
+                <p>你的分数: <span id="finalScore">0</span></p>
+                <input type="text" id="playerName" placeholder="输入你的名字" maxlength="20">
+                <button id="saveScoreBtn">保存分数</button>
+                <button id="playAgainBtn">再玩一次</button>
+            </div>
+        </div>
+
+        <!-- 排行榜 -->
+        <div class="leaderboard">
+            <h3>🏆 排行榜</h3>
+            <div id="leaderboardList">加载中...</div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
