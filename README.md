@@ -2,6 +2,8 @@
 
 一个基于 HTML5 Canvas 的经典贪吃蛇游戏，支持在线排行榜功能。
 
+🎮 **游戏地址**: https://ellyhu1884.github.io/snake-game
+
 ## 🎮 游戏特色
 
 - 🐍 经典贪吃蛇玩法
